@@ -12,6 +12,7 @@ com\hand\Servce\impl\AddressServiceImpl.class
 com\hand\Servce\CountryService.class
 com\hand\Servce\impl\CityServiceImpl.class
 com\hand\dao\CountryMapper.class
+com\hand\test\Five.class
 com\hand\dao\CustomerMapper.class
 com\hand\Servce\impl\CustomerServiceImpl.class
 com\hand\Servce\CityService.class

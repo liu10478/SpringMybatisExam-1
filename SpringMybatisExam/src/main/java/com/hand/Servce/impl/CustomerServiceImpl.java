@@ -19,4 +19,13 @@ public class CustomerServiceImpl implements CustomerService {
 		customerMapper.insertCustomer(customer);
 		System.out.println("customer表添加数据成功");
 	}
+
+	public Integer lastestId() {
+		return customerMapper.maxCustomerId();
+	}
+
+	public Customer lastestCustomer(Integer customer_id) {
+		
+		return customerMapper.selectLastest(customer_id);
+	}
 }

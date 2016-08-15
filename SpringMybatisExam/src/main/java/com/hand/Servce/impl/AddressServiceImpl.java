@@ -3,6 +3,7 @@ package com.hand.Servce.impl;
 import com.hand.Servce.AddressService;
 import com.hand.dao.AddressMapper;
 import com.hand.pojos.Address;
+import com.hand.pojos.Customer;
 
 public class AddressServiceImpl implements AddressService{
 	AddressMapper addressMapper;
@@ -23,4 +24,10 @@ public class AddressServiceImpl implements AddressService{
 			return true;
 		}
 	}
+
+	public String getAddress(Integer address_id) {
+		return addressMapper.getAddress(address_id);
+	}
+
+	
 }

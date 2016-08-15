@@ -30,32 +30,19 @@ public class Four {
 		System.out.println("请输入address_id");
 		String address_id=in.next();
 		
+		do{
+			System.out.println("address_id不存在,请重新输入:");
+			address_id=in.next();
+		}while(addressService.isAddressId(Integer.parseInt(address_id))==false);
 		
-		/*System.out.println(addressService.isAddressId(Integer.parseInt(address_id)));*/
-		
-		if(addressService.isAddressId(Integer.parseInt(address_id))==false){
-			System.out.println("address_id不存在,请重新输入");
-		
-		}else{
-			/*SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:sss");
-			String datetime = sdf.format(new java.util.Date());*/
-			
 			Customer customer = new Customer();
 			customer.setFirst_name(first_name);
 			customer.setLast_name(last_name);
 			customer.setEmail(email);
 			customer.setAddress_id(Integer.parseInt(address_id));
 			customer.setCreate_date(new Date(new java.util.Date().getTime()));
-			
-			
 			customerService.addCustomer(customer);
-		}
-		
-		
-		
-
-	}
-	public static void sysin(){
 		
 	}
+	
 }

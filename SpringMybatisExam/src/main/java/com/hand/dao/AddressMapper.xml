@@ -6,4 +6,7 @@
 	<select id="findByAddressId" parameterType="Integer" resultType="Address">
 		select * from address where address_id=#{address_id}
 	</select>
+	<select id="getAddress" parameterType="Integer" resultType="String">
+		select address from address where address_id=#{address_id}
+	</select>
 </mapper>
