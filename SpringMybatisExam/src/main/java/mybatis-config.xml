@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration  
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+	"http://mybatis.org/dtd/mybatis-3-config.dtd"> 
+<configuration>
+	
+	<typeAliases>
+		<typeAlias alias="Address" type="com.hand.pojos.Address" />
+		<typeAlias alias="City" type="com.hand.pojos.City" />
+		<typeAlias alias="Country" type="com.hand.pojos.Country" />
+		<typeAlias alias="Customer" type="com.hand.pojos.Customer" />
+		<typeAlias alias="Store" type="com.hand.pojos.Store" />
+		
+	</typeAliases>
+	
+	
+	<mappers>
+		<mapper resource="com/hand/dao/AddressMapper.xml"/>
+		<mapper resource="com/hand/dao/CityMapper.xml"/>
+		<mapper resource="com/hand/dao/CountryMapper.xml"/>
+		<mapper resource="com/hand/dao/StoreMapper.xml"/>
+		<mapper resource="com/hand/dao/CustomerMapper.xml"/>
+		
+		
+	</mappers>
+	
+</configuration>
